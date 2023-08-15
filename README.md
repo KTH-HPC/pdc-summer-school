@@ -6,3 +6,5 @@ The repo will be continuously updated during the school, so make sure to pull an
 For questions about a particular exercise session, write in slack or ask us in person during the hands-on.
 
 Have a great summer school!
+
+https://coderefinery.github.io/research-software-engineering/
