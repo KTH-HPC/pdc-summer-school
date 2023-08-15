@@ -54,7 +54,8 @@ double calcNext(double *restrict A, double *restrict Anew, int m, int n)
         {
             Anew[OFFSET(j, i, m)] = 0.25 * ( A[OFFSET(j, i+1, m)] + A[OFFSET(j, i-1, m)]
                                            + A[OFFSET(j-1, i, m)] + A[OFFSET(j+1, i, m)]);
-            error = fmax( error, fabs(Anew[OFFSET(j, i, m)] - A[OFFSET(j, i , m)]));
+            if (error < fabs(Anew[OFFSET(j, i, m)] - A[OFFSET(j, i , m)]))
+              error = (fabs(Anew[OFFSET(j, i, m)] - A[OFFSET(j, i , m)]));
         }
     }
     return error;
