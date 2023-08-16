@@ -9,7 +9,7 @@ Note that we allocate only 16 physical cores but  32 cpus per task, this is beca
 
 Run the hello world example `srun ./a.out`
 
-If we instead only want to run one task per physical core we can export the environment variable `export OMP_NUM_TASKS=16`, what happens?
+If we instead only want to run one task per physical core we can export the environment variable `export OMP_NUM_THREADS=16`, what happens?
 
 Experiment with allocating different number of cores and tasks and look into the code hello_world.c
 
