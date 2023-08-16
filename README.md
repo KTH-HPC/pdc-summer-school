@@ -8,3 +8,9 @@ For questions about a particular exercise session, write in slack or ask us in p
 Have a great summer school!
 
 https://coderefinery.github.io/research-software-engineering/
+
+To clone this repo:
+`git clone https://github.com/KTH-HPC/pdc-summer-school.git`
+
+To pull any changes (get new updates, changes and exercises that are added):
+`git pull https://github.com/KTH-HPC/pdc-summer-school.git`
