@@ -1,4 +1,4 @@
-#Hello world with OpenMP on Dardel
+# Hello world with OpenMP on Dardel
 
 Compile the code with  `cc -fopenmp hello_world.c`
 
@@ -15,7 +15,7 @@ Experiment with allocating different number of cores and tasks and look into the
 
 Remember to always use srun on a cluster like Dardel, otherwise you run on the login node which is not good as it is shared among several users.
 
-#STREAM Triad
+# STREAM Triad
 Small test to test the bandwidth.
 
 Two versions are available, both the stream_triad_seq.c and stream_triad_omp.c
