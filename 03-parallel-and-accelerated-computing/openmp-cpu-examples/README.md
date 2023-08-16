@@ -26,4 +26,9 @@ First try the sequential version.
 
 Then, try running the openmp version with different number of threads, what do you observe? Does the bandwidth change, why? If you increase the number of threads does it always increase?
 
+# Allocating a whole node
+It is also possible to allocate an entire node on the main partition. `salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=32 -t 0:30:00 -A edu23.summer -p main`
+
+You can see all partitions with the `sinfo` command and see different jobs with `squeue`. If you want to see everyone who is running on our allocation you can do `squeue -A edu23.summer` or if you have jobs in the queue you can check them with `squeue --me` to see how they are doing. There are towns of options for these commands so you can filter different jobs.
+
 
