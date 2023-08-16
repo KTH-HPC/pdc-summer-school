@@ -2,10 +2,10 @@
 
 Compile the code with  `cc -fopenmp hello_world.c`
 
-Allocate 16 cores (but you may change the number, what happens if you go above 128?) for 30 minutes on the shared partition of Dardel. `salloc --nodes=1 --cores=16 --ntasks-per-node=1 --cpus-per-task=32 -t 0:30:00 -A edu23.summer -p shared` 
+Allocate 16 cores (but you may change the number, what happens if you go above 128?) for 30 minutes on the shared partition of Dardel. `salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=32 -t 0:30:00 -A edu23.summer -p shared` 
 
 
-Note that we allocate only 16 physical cores but use 32 cpus per task, this is becaseu we have 16 cores with 2 threads each, meaning 32 total threads.
+Note that we allocate only 16 physical cores but  32 cpus per task, this is because we have 16 cores with 2 threads each, meaning 32 total threads.
 
 Run the hello world example `srun ./a.out`
 
