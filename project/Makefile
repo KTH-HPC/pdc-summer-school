@@ -19,8 +19,10 @@
 
 # Compilers
 # Make sure you use the correct wrappers
-CC=gcc
-MPICC=mpicc
+#CC=gcc
+#Correct CC and MPICC for Dardel
+CC=cc
+MPICC=cc
 CUDACC=nvcc
 HIPCC=hipcc
 OMPFLAG= -fopenmp
@@ -31,7 +33,7 @@ LIBS=-lm
 
 # Targets to build
 # change energy_storms_cuda to energy_storms_hip in order to build for hip instead
-OBJS=energy_storms_seq energy_storms_omp energy_storms_mpi energy_storms_cuda
+OBJS=energy_storms_seq energy_storms_omp energy_storms_mpi energy_storms_hip
 
 # Rules. By default show help
 help:
