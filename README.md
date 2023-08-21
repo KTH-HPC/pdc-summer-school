@@ -17,3 +17,7 @@ To pull any changes (get new updates, changes and exercises that are added):
 
 To also load the content of the linked repositories (such as the GPU exercises), use the following git command:
 `git submodule update --init --recursive`
+
+# Quiz 1
+Link to quiz for the first week, 10/12 points are needed for a passing grade. You can repeat the quiz many times so try to get 12/12!
+https://forms.gle/tzmrpogNRjM6W9MK8
