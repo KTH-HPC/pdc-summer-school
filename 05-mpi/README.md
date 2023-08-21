@@ -21,7 +21,7 @@ By default the cray compiler is loaded into your environment. In order to use an
 module swap PrgEnv-cray PrgEnv-gnu
 ```
 
-On Beskow one should always use the *compiler wrappers* `cc`, `CC` or 
+On Dardel one should always use the *compiler wrappers* `cc`, `CC` or 
 `ftn` (for C, C++ and Fortran codes, respectively), 
 which will automatically link to MPI libraries and linear 
 algebra libraries like BLAS, LAPACK, etc.
@@ -55,8 +55,6 @@ Then the srun command is used to launch an MPI application:
 ```
 srun -n <number of mpi ranks> ./example.x
 ```
-
-In this example we will start 32 MPI tasks (there are 32 cores per node on the Beskow nodes).
 
 If you do not use srun and try to start your program on the login node then you will get an error similar to
 
