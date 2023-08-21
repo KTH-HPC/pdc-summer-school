@@ -3,7 +3,7 @@
 
 - Calculation of &pi;: Serial C and Fortran ([pi_serial.c](pi_serial.c) and [pi_serial.f90](pi_serial.f90))
 
-# Exercise 1: Calculate &pi; Using Collectives
+# Exercise Calculate &pi
 
 Calculates &pi; using a "dartboard" algorithm. If you're unfamiliar with this algorithm, checkout the Wikipedia page on 
 [Monte Carlo Integration](http://en.wikipedia.org/wiki/Monte_Carlo_Integration) or 
