@@ -28,7 +28,7 @@ HIPCC=hipcc
 OMPFLAG= -fopenmp
 
 # Flags for optimization and libs
-FLAGS=-O3 -Wall
+FLAGS=-O3
 LIBS=-lm
 
 # Targets to build
@@ -56,19 +56,19 @@ help:
 all: $(OBJS)
 
 energy_storms_seq: energy_storms.c
-	$(CC) $(DEBUG) $< $(LIBS) -o $@
+	$(CC) $(DEBUG) $(FLAGS) $< $(LIBS) -o $@
 
 energy_storms_omp: energy_storms_omp.c
-	$(CC) $(DEBUG) $(OMPFLAG) $< $(LIBS) -o $@
+	$(CC) $(DEBUG) $(OMPFLAG) $(FLAGS) $< $(LIBS) -o $@
 
 energy_storms_mpi: energy_storms_mpi.c
-	$(MPICC) $(DEBUG) $< $(LIBS) -o $@
+	$(MPICC) $(DEBUG) $(FLAGS) $< $(LIBS) -o $@
 
 energy_storms_cuda: energy_storms_cuda.cu
-	$(CUDACC) $(DEBUG) $< $(LIBS) -o $@
+	$(CUDACC) $(DEBUG) $(FLAGS) $< $(LIBS) -o $@
 
 energy_storms_hip: energy_storms_hip.hip
-	$(HIPCC) $(DEBUG) $< $(LIBS) -o $@
+	$(HIPCC) $(DEBUG) $(FLAGS) $< $(LIBS) -o $@
 
 # Remove the target files
 clean:
