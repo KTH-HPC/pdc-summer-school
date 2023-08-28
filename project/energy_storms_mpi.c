@@ -263,6 +263,8 @@ int main(int argc, char *argv[]) {
     /* 8. Free resources */    
     for( i=0; i<argc-2; i++ )
         free( storms[i].posval );
+    /* 8.1 Clean up MPI Processes before exit */
+    MPI_Finalize();
 
     /* 9. Program ended successfully */
     return 0;
